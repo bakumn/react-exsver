@@ -35,7 +35,7 @@ var ingredients = [
 
 app.get('/ingredients', function(req, res) {
     console.log("GET From SERVER");
-    res.send(ingredients);
+    res.status(200).send(ingredients);
 });
 
 app.post('/ingredients', function(req, res) {
@@ -46,4 +46,4 @@ app.post('/ingredients', function(req, res) {
     //res.status(200).send("Successfully posted ingredient");
 });
 
-app.listen(6069);
+app.listen(6060);
